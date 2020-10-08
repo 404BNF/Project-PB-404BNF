@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/angkot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nama_angkot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Angkot" />
+
+        <TextView
+            android:id="@+id/tv_rute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rute" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

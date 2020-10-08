@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tentang Aplikasi Kami"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <ImageView
+        android:layout_marginTop="0dp"
+        android:id="@+id/imageView5"
+        android:layout_width="232dp"
+        android:layout_height="356dp"
+        app:srcCompat="@drawable/brain" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="project ini merupakan Capstone Project dari Kelompok 9 ( 404 Brain Not Found ) untuk Memenuhi Tugas Besar dari Mata Kuliah Pemrograman Bergerak
+                \n
+        \n Contributing
+        \n
+        \n 1. Muhammad Shefa Reynaldi (https://github.com/shefareynaldi)
+        \n 2. Gilang Prawira (https://github.com/gilangprawira)
+        \n 3. Aulia Abdurrahman (https://github.com/storicax)
+        \n 4. Siti Nurhanifah (https://github.com/SitiNurhanifah)"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
