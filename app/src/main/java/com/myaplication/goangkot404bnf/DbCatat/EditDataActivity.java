@@ -1,4 +1,4 @@
-package com.myaplication.goangkot404bnf;
+package com.myaplication.goangkot404bnf.DbCatat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myaplication.goangkot404bnf.R;
 
 /**
  * Created by User on 2/28/2017.

@@ -1,4 +1,4 @@
-package com.myaplication.goangkot404bnf.notification;
+package com.myaplication.goangkot404bnf.Notification;
 
 import android.app.Dialog;
 import android.app.TimePickerDialog;

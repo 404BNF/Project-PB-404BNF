@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GO-NGKOT</string>
     <string name="title_activity_detail">ScrollingActivity</string>
+<string name="action_alarm">Alarm</string>
 
 
     <string name="link">Contributing

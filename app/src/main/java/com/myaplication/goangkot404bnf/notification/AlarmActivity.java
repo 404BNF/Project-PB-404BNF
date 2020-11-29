@@ -1,27 +1,26 @@
-package com.myaplication.goangkot404bnf.notification;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
+package com.myaplication.goangkot404bnf.Notification;
 
 import android.app.AlarmManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
-import java.util.Calendar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import com.myaplication.goangkot404bnf.R;
 
+import java.util.Calendar;
 
 public class AlarmActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
 
@@ -36,7 +35,7 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
 
-        Intent intent = new Intent(this, AlarmReceiver.class);
+        Intent intent = new Intent(this, com.myaplication.goangkot404bnf.Notification.AlarmReceiver.class);
         boolean alarmUp = (PendingIntent.getBroadcast(this, NOTIFICATION_ID,
                 intent, PendingIntent.FLAG_NO_CREATE) != null);
 
@@ -46,7 +45,7 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
         buttonTimePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogFragment timePicker = new TimePickerFragment();
+                DialogFragment timePicker = new com.myaplication.goangkot404bnf.Notification.TimePickerFragment();
                 timePicker.show(getSupportFragmentManager(), "time picker");
             }
         });
@@ -56,7 +55,7 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
             @Override
             public void onClick(View v) {
                 cancelAlarm();
-                Toast.makeText(AlarmActivity.this, "Alarm telah dibatalkan",
+                Toast.makeText(AlarmActivity.this, "Notification Di Batalkan",
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -70,13 +69,6 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
 //        updateTimeText(c);
         startAlarm(c);
     }
- /*   private void updateTimeText(Calendar c) {
-        String timeText = "Alarm set for: ";
-        timeText += DateFormat.getTimeInstance(DateFormat.SHORT).format(c.getTime());
-        mTextView.setText(timeText);
-    }
-
-  */
 
 
     private void startAlarm(Calendar c) {
@@ -100,7 +92,7 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
                 AlarmManager.INTERVAL_DAY, pendingIntent);
 
         createNotificationChannel();
-        Toast.makeText(AlarmActivity.this, "Notification Telah Di Buat",
+        Toast.makeText(AlarmActivity.this, "Notification Pengingat Telah Di Atur",
                 Toast.LENGTH_SHORT).show();
     }
     private void cancelAlarm() {
@@ -123,14 +115,14 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
 
             NotificationChannel notificationChannel = new NotificationChannel
                     (PRIMARY_CHANNEL_ID,
-                            "Notifikasi muncul",
+                            "Notification Up",
                             NotificationManager.IMPORTANCE_HIGH);
 
             notificationChannel.enableLights(true);
             notificationChannel.setLightColor(Color.RED);
             notificationChannel.enableVibration(true);
             notificationChannel.setDescription
-                    ("Alarm akan diset setiap 24 jam");
+                    ("Alarm Setted");
             mNotificationManager.createNotificationChannel(notificationChannel);
         }
     }

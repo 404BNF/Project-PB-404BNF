@@ -1,4 +1,4 @@
-package com.myaplication.goangkot404bnf.notification;
+package com.myaplication.goangkot404bnf.Notification;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -8,8 +8,8 @@ import android.content.Intent;
 
 import androidx.core.app.NotificationCompat;
 
-import com.myaplication.goangkot404bnf.MainActivity;
 import com.myaplication.goangkot404bnf.R;
+import com.myaplication.goangkot404bnf.MainActivity;
 
 public class AlarmReceiver extends BroadcastReceiver {
 
@@ -35,9 +35,9 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder
                 (context, PRIMARY_CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_notif_alarm)
-                .setContentTitle("Notifiction GO-NGKOT")
-                .setContentText("Halo ini Notifikasi Yang Kamu Sett")
+                .setSmallIcon(R.mipmap.iconel)
+                .setContentTitle("Notification From GO-NGKOT")
+                .setContentText("Ayo Buka GO-NGKOT mungkin Anda Perlu Pergi Jalan Jalan Sekarang")
                 .setContentIntent(contentPendingIntent)
                 .setContentIntent(contentPendingIntent)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -47,3 +47,5 @@ public class AlarmReceiver extends BroadcastReceiver {
         mNotificationManager.notify(NOTIFICATION_ID, builder.build());
     }
 }
+
+
