@@ -2,5 +2,6 @@
     <string name="app_name">Daftar Angkot Purwakarta</string>
     <string name="title_activity_detail">ScrollingActivity</string>
     <string name="link">Github Kami : https://www.github.com/stroicax</string>
+
     <string name="action_settings">Settings</string>
 </resources>

@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-
+import com.myaplication.goangkot404bnf.notification.AlarmActivity;
 import com.myaplication.goangkot404bnf.model.AngkotModel;
 import com.myaplication.goangkot404bnf.model.AngkotItem;
 import com.myaplication.goangkot404bnf.rest.ApiConfig;
@@ -63,5 +63,31 @@ public class MainActivity extends AppCompatActivity {
         rv = findViewById(R.id.rv);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.action_status:
+                Intent inten = new Intent(MainActivity.this,
+                       AlarmActivity.class);
+                startActivity(inten);
+                return true;
+            case R.id.action_favorites:
+                Intent inte = new Intent(MainActivity.this,
+                       AboutActivity.class);
+                startActivity(inte);
+                return true;
+            default:
+                // Do nothing
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
