@@ -1,7 +1,15 @@
 <resources>
-    <string name="app_name">Daftar Angkot Purwakarta</string>
+    <string name="app_name">GO-NGKOT</string>
     <string name="title_activity_detail">ScrollingActivity</string>
-    <string name="link">Github Kami : https://www.github.com/stroicax</string>
+
+
+    <string name="link">Contributing
+            \n
+            \n 1. Aulia Abdurrahman (https://github.com/storicax)
+            \n 2. Siti Nurhanifah (https://github.com/SitiNurhanifah)
+            \n 3. Muhammad Shefa Reynaldi (https://github.com/shefareynaldi)
+            \n 4. Gilang Prawira (https://github.com/gilangprawira)
+            </string>
 
     <string name="action_settings">Settings</string>
 </resources>

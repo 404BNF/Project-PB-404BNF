@@ -44,6 +44,20 @@
                     app:srcCompat="@drawable/brain" />
 
 
+
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DADADA"
+                    android:gravity="left"
+                    android:text="project ini merupakan Capstone Project dari Kelompok 9 ( 404 Brain Not Found ) untuk Memenuhi Tugas Besar dari Mata Kuliah Pemrograman Bergerak"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/textViewlink"
                     android:layout_width="match_parent"
@@ -53,27 +67,10 @@
                     android:gravity="left"
                     android:text="@string/link"
                     android:textColorLink="#00ccff"
-
-                    android:textSize="20dp" />
-
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#DADADA"
-                    android:gravity="left"
-                    android:text="project ini merupakan Capstone Project dari Kelompok 9 ( 404 Brain Not Found ) untuk Memenuhi Tugas Besar dari Mata Kuliah Pemrograman Bergerak
-                    \n
-            \n Contributing
-            \n
-            \n 1. Muhammad Shefa Reynaldi (https://github.com/shefareynaldi)
-            \n 2. Gilang Prawira (https://github.com/gilangprawira)
-            \n 3. Aulia Abdurrahman (https://github.com/storicax)
-            \n 4. Siti Nurhanifah (https://github.com/SitiNurhanifah)"
                     android:textColor="@android:color/black"
                     android:textSize="20dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"/>
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
