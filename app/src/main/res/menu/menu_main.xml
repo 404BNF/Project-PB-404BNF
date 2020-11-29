@@ -14,4 +14,10 @@
         android:orderInCategory="30"
         android:title="About US"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_catat"
+        android:orderInCategory="20"
+        android:title="Pencatatan"
+        app:showAsAction="never" />
 </menu>
