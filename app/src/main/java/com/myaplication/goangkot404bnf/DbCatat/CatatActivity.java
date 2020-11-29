@@ -1,5 +1,4 @@
-package com.myaplication.goangkot404bnf;
-
+package com.myaplication.goangkot404bnf.DbCatat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +7,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myaplication.goangkot404bnf.R;
 
 public class CatatActivity extends AppCompatActivity {
 

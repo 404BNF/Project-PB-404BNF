@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="open time picker" />
+        android:text="Atur notifikasi" />
 
     <Button
         android:id="@+id/button_cancel"
@@ -25,5 +25,5 @@
         android:layout_below="@id/button_timepicker"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
-        android:text="cancel alarm" />
+        android:text="Batalkan Notifikasi" />
 </RelativeLayout>

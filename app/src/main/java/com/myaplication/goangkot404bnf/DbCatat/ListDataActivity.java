@@ -1,4 +1,4 @@
-package com.myaplication.goangkot404bnf;
+package com.myaplication.goangkot404bnf.DbCatat;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -16,6 +16,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myaplication.goangkot404bnf.R;
 
 import java.util.ArrayList;
 

@@ -10,11 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.myaplication.goangkot404bnf.notification.AlarmActivity;
+import com.myaplication.goangkot404bnf.Notification.AlarmActivity;
 import com.myaplication.goangkot404bnf.model.AngkotModel;
 import com.myaplication.goangkot404bnf.model.AngkotItem;
 import com.myaplication.goangkot404bnf.rest.ApiConfig;
 import com.myaplication.goangkot404bnf.rest.ApiService;
+import com.myaplication.goangkot404bnf.DbCatat.CatatActivity;
 
 import java.util.ArrayList;
 
@@ -76,12 +77,12 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.action_status:
                 Intent inten = new Intent(MainActivity.this,
-                       AlarmActivity.class);
+                        AlarmActivity.class);
                 startActivity(inten);
                 return true;
             case R.id.action_favorites:
                 Intent inte = new Intent(MainActivity.this,
-                       AboutActivity.class);
+                        AboutActivity.class);
                 startActivity(inte);
                 return true;
             case R.id.action_catat:

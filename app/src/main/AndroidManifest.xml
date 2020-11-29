@@ -12,14 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <receiver
-            android:name="com.myaplication.goangkot404bnf.notification.AlarmReceiver"
+            android:name="com.myaplication.goangkot404bnf.Notification.AlarmReceiver"
             android:enabled="true"
             android:exported="false">
         </receiver>
 
         <activity
-            android:name="com.myaplication.goangkot404bnf.notification.AlarmActivity"
+            android:name="com.myaplication.goangkot404bnf.Notification.AlarmActivity"
             android:label="Get Notification"
             android:theme="@style/AppTheme"
             android:parentActivityName="com.myaplication.goangkot404bnf.MainActivity"/>
@@ -42,9 +43,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.myaplication.goangkot404bnf.MainActivity" />
-        <activity android:name="com.myaplication.goangkot404bnf.ListDataActivity"></activity>
-        <activity android:name="com.myaplication.goangkot404bnf.CatatActivity"></activity>
-        <activity android:name="com.myaplication.goangkot404bnf.EditDataActivity"></activity>
+        <activity android:name="com.myaplication.goangkot404bnf.DbCatat.ListDataActivity"></activity>
+        <activity android:name="com.myaplication.goangkot404bnf.DbCatat.CatatActivity"></activity>
+        <activity android:name="com.myaplication.goangkot404bnf.DbCatat.EditDataActivity"></activity>
     </application>
 
 </manifest>
