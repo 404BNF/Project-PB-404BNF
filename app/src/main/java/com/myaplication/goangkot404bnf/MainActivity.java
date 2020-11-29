@@ -84,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
                        AboutActivity.class);
                 startActivity(inte);
                 return true;
+            case R.id.action_catat:
+                Intent inter = new Intent(MainActivity.this,
+                        CatatActivity.class);
+                startActivity(inter);
+                return true;
             default:
                 // Do nothing
         }

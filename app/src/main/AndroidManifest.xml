@@ -42,6 +42,9 @@
             </intent-filter>
         </activity>
         <activity android:name="com.myaplication.goangkot404bnf.MainActivity" />
+        <activity android:name="com.myaplication.goangkot404bnf.ListDataActivity"></activity>
+        <activity android:name="com.myaplication.goangkot404bnf.CatatActivity"></activity>
+        <activity android:name="com.myaplication.goangkot404bnf.EditDataActivity"></activity>
     </application>
 
 </manifest>
