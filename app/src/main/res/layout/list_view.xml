@@ -31,7 +31,7 @@
                 android:gravity="center"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="6dp"
-                android:text="Nama Batik"
+                android:text="Trayek"
                 android:id="@+id/tv_title"
                 android:textColor="@android:color/black"
                 android:textSize="18dp"

@@ -9,8 +9,11 @@ import android.os.Bundle;
 
 public class AboutActivity extends AppCompatActivity {
 
-
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_about_us);
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override

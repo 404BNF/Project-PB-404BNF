@@ -24,13 +24,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:id="@+id/tv_penjelasan" />
+            android:id="@+id/tv_nomor" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:id="@+id/tv_daerah"/>
+            android:id="@+id/tv_lintasan"/>
 
 
 

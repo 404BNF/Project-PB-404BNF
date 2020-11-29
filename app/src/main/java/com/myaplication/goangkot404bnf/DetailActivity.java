@@ -14,8 +14,8 @@ public class DetailActivity extends AppCompatActivity {
 
     private ImageView ivDetail;
 
-    private TextView tvPenjelasan;
-    private TextView tvDaerah;
+    private TextView tvNomor;
+    private TextView tvLintasan;
 
 
     @Override
@@ -29,8 +29,8 @@ public class DetailActivity extends AppCompatActivity {
 
 
         getSupportActionBar().setTitle(getIntent().getStringExtra("trayek_angkot"));
-        tvPenjelasan.setText("No Angkot : " + getIntent().getStringExtra("nomor_angkot"));
-        tvDaerah.setText("Lintasan : " + getIntent().getStringExtra( "lintasan_angkot"));
+        tvNomor.setText("No Angkot : " + getIntent().getStringExtra("nomor_angkot"));
+        tvLintasan.setText("Lintasan : " + getIntent().getStringExtra( "lintasan_angkot"));
 
 
         Glide.with(getApplicationContext()).load(getIntent().getStringExtra("gambar_angkot")).error(R.drawable.ic_launcher_background)
@@ -44,7 +44,7 @@ public class DetailActivity extends AppCompatActivity {
     private void initView() {
         ivDetail = findViewById(R.id.iv_detail);
 
-        tvPenjelasan = findViewById(R.id.tv_penjelasan);
-        tvDaerah = findViewById(R.id.tv_daerah);
+        tvNomor = findViewById(R.id.tv_nomor);
+        tvLintasan = findViewById(R.id.tv_lintasan);
     }
 }
