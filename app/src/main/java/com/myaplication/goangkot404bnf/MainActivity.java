@@ -13,21 +13,27 @@ import android.widget.Toast;
 import com.myaplication.goangkot404bnf.Notification.AlarmActivity;
 import com.myaplication.goangkot404bnf.model.AngkotModel;
 import com.myaplication.goangkot404bnf.model.AngkotItem;
+import com.myaplication.goangkot404bnf.DbCatat.CatatActivity;
 import com.myaplication.goangkot404bnf.rest.ApiConfig;
 import com.myaplication.goangkot404bnf.rest.ApiService;
-import com.myaplication.goangkot404bnf.DbCatat.CatatActivity;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rv;
     private ArrayList<AngkotItem> angkotItems;
     private AngkotAdapter angkotAdapter;
+    private Text mAlarm;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,9 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void initView() {
-        rv = findViewById(R.id.rv);
-    }
+private void initView() {
+    mAlarm= findViewById(R.id.action_status);
+    rv = findViewById(R.id.rv);
+}
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -76,13 +84,14 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.action_status:
-                Intent inten = new Intent(MainActivity.this,
-                        AlarmActivity.class);
-                startActivity(inten);
+                Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
+                String mOrderMessage = null;
+                intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+                startActivity(intent);
                 return true;
             case R.id.action_favorites:
                 Intent inte = new Intent(MainActivity.this,
-                        AboutActivity.class);
+                       AboutActivity.class);
                 startActivity(inte);
                 return true;
             case R.id.action_catat:
