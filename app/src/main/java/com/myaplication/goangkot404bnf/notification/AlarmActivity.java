@@ -100,7 +100,7 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
                 AlarmManager.INTERVAL_DAY, pendingIntent);
 
         createNotificationChannel();
-        Toast.makeText(AlarmActivity.this, "Alarm telah diset",
+        Toast.makeText(AlarmActivity.this, "Notification Telah Di Buat",
                 Toast.LENGTH_SHORT).show();
     }
     private void cancelAlarm() {
@@ -135,51 +135,3 @@ public class AlarmActivity extends AppCompatActivity implements TimePickerDialog
         }
     }
 }
-
-   /* private void startalarm(final Calendar c){
-
-        mNotificationManager = (NotificationManager)
-                getSystemService(NOTIFICATION_SERVICE);
-
-        ToggleButton alarmToggle = findViewById(R.id.alarmToggle);
-
-        Intent notifyIntent = new Intent(this, AlarmReceiver.class);
-
-        boolean alarmUp = (PendingIntent.getBroadcast(this, NOTIFICATION_ID,
-                notifyIntent, PendingIntent.FLAG_NO_CREATE) != null);
-        alarmToggle.setChecked(alarmUp);
-
-        final PendingIntent notifyPendingIntent = PendingIntent.getBroadcast
-                (this, NOTIFICATION_ID, notifyIntent,
-                        PendingIntent.FLAG_UPDATE_CURRENT);
-
-        final AlarmManager alarmManager = (AlarmManager) getSystemService
-                (ALARM_SERVICE);
-
-        alarmToggle.setOnCheckedChangeListener
-                (new CompoundButton.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged
-                            (CompoundButton buttonView, boolean isChecked) {
-                        String toastMessage = "lol";
-                        if (isChecked) {
-
-                            if (alarmManager != null) {
-                                alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME,
-                                        c.getTimeInMillis(), 60000, notifyPendingIntent );
-
-                            }
-                            toastMessage = "getString(R.string.stand_up_alarm_on";
-                            }
-
-                         Toast.makeText(AlarmActivity.this, toastMessage,
-                                 Toast.LENGTH_SHORT).show();
-                     }
-                });
-
-    }
-}
-    */
-   /* f
-
-    */
